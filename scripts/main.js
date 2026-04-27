@@ -6,7 +6,7 @@ const CONFIG = {
   heroVideo:         'assets/videos/portfolio_background_v2.mp4',
   heroVideoFallback: 'assets/videos/portfolio_background.mp4',
   dataFile:          'portfolio_data.json',
-  resumePath:        'assets/docs/Mohamed Mostafa Resume 2.pdf',
+  resumePath:        'assets/docs/Mohamed_Mostafa_Resume_2.pdf',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
