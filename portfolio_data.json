@@ -1,0 +1,440 @@
+{
+  "identity": {
+    "name": "Mohamed Mostafa",
+    "alias": "KM-Developer",
+    "tagline_subtitle": "Unity Game Developer | Graphics Programmer | Community Founder",
+    "tagline_typed": "Transforming logic into immersive experiences — 1% better every day.",
+    "bio": "A game developer and educator with 7+ years of experience building interactive experiences across multiple genres. I started as a self-taught creator, grew through freelance projects and teaching, and now build at the intersection of gameplay engineering, graphics programming, and community leadership.",
+    "origin_story": "My journey started with a love for drawing — that curiosity led me into hardware, then programming, and finally game development: the perfect intersection of art, audio, and code. Along the way I became passionate about teaching, launching an Arabic game dev channel and later founding Cairo University's first game dev club.",
+    "location": "Cairo, Egypt",
+    "email": "Mohamed.5.20047@gmail.com",
+    "phone": "+20 1157467984",
+    "resume_path": "assets/docs/Mohamed Mostafa Resume 2.pdf"
+  },
+  "quotes": [
+    {
+      "text": "if you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done.",
+      "author": "James Clear",
+      "source": "Atomic Habits"
+    }
+  ],
+  "stats": [
+    {
+      "value": "50+",
+      "label": "Students Trained"
+    },
+    {
+      "value": "30+",
+      "label": "Games Built"
+    },
+    {
+      "value": "7+",
+      "label": "Years Experience"
+    }
+  ],
+  "skills": {
+    "game": [
+      {
+        "name": "Unity",
+        "icon_svg_or_emoji": "🎮"
+      },
+      {
+        "name": "C#",
+        "icon_svg_or_emoji": "⚙️"
+      },
+      {
+        "name": "GLSL/Shaders",
+        "icon_svg_or_emoji": "✨"
+      },
+      {
+        "name": "OpenGL",
+        "icon_svg_or_emoji": "🖼️"
+      },
+      {
+        "name": "VFX",
+        "icon_svg_or_emoji": "💥"
+      },
+      {
+        "name": "DOTween",
+        "icon_svg_or_emoji": "🎬"
+      },
+      {
+        "name": "ML Agents",
+        "icon_svg_or_emoji": "🤖"
+      },
+      {
+        "name": "Multiplayer Networking",
+        "icon_svg_or_emoji": "🌐"
+      }
+    ],
+    "programming": [
+      {
+        "name": "C++",
+        "icon_svg_or_emoji": "💻"
+      },
+      {
+        "name": "Python",
+        "icon_svg_or_emoji": "🐍"
+      },
+      {
+        "name": "Java",
+        "icon_svg_or_emoji": "☕"
+      },
+      {
+        "name": "SQL",
+        "icon_svg_or_emoji": "🗄️"
+      },
+      {
+        "name": "Dart",
+        "icon_svg_or_emoji": "🎯"
+      },
+      {
+        "name": "HTML/CSS/JS",
+        "icon_svg_or_emoji": "🌐"
+      },
+      {
+        "name": "Django",
+        "icon_svg_or_emoji": "🐍"
+      },
+      {
+        "name": "Spring Boot",
+        "icon_svg_or_emoji": "🍃"
+      },
+      {
+        "name": "Kotlin",
+        "icon_svg_or_emoji": "📱"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Game Developer (Part-Time)",
+      "company": "Al-Arcade Studio",
+      "type": "Part-Time",
+      "dates": "Apr 2026–Present",
+      "current": true,
+      "bullets": [
+        "Integrated Unity with Supabase for auth & data management",
+        "Enhanced game feel using DOTween for polished player feedback",
+        "Managed version control branches & resolved merge conflicts"
+      ]
+    },
+    {
+      "role": "Founder & Community Manager",
+      "company": "FCAI-CU Game Development Club",
+      "type": "Community Leadership",
+      "dates": "Sep 2023–Present",
+      "current": true,
+      "bullets": [
+        "Founded Cairo University's first student-run game dev community under faculty supervision",
+        "Scaled the organizing team from 2 to 23+ members across multiple departments",
+        "Trained 50+ students, facilitated 30+ completed games, and ran a 52-person game jam (19 games in 4 days)",
+        "Managed 240+ tickets for industry networking events featuring professional game developers"
+      ]
+    },
+    {
+      "role": "Back-End Dev Intern (Java Spring Boot)",
+      "company": "Banque Misr",
+      "type": "Internship",
+      "dates": "Jul–Aug 2025",
+      "current": false,
+      "bullets": [
+        "Weekly team projects using Docker, Git, external APIs",
+        "Applied Spring Boot, SQL, MongoDB, testing, caching"
+      ]
+    },
+    {
+      "role": "Game Dev Instructor",
+      "company": "European Universities in Egypt",
+      "type": "Instructor",
+      "dates": "Jan–Feb 2025",
+      "current": false,
+      "bullets": [
+        "7-unit Unity/C# course for 15 students",
+        "10 interactive workshops (4h each)"
+      ]
+    },
+    {
+      "role": "Flutter Mobile Dev Trainee",
+      "company": "ITI",
+      "type": "Trainee",
+      "dates": "Jan–Feb 2025",
+      "current": false,
+      "bullets": [
+        "Android apps with Dart, Flutter, Firebase"
+      ]
+    },
+    {
+      "role": "Game Developer (Freelance)",
+      "company": "Remote",
+      "type": "Freelance",
+      "dates": "May 2021–Jan 2025",
+      "current": false,
+      "bullets": [
+        "Multiple genres: action, puzzle, racing, simulation",
+        "Led 3-member team: 300-level racing game, 150 cars, AI, LAN multiplayer",
+        "60+ lectures, 30+ games with students"
+      ]
+    },
+    {
+      "role": "3D Game Dev & Educator",
+      "company": "KM Developer",
+      "type": "Educator",
+      "dates": "Aug 2020–Jan 2022",
+      "current": false,
+      "bullets": [
+        "Arabic game dev education resources",
+        "Discord, YouTube, WhatsApp communities"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "racing",
+      "title": "3D Top-Down Car Racing (Freelance)",
+      "category": "published",
+      "role": "Lead Developer",
+      "description": "A massive racing game featuring 300 levels, 150 cars, AI opponents, LAN multiplayer, microtransactions, shaders, and VFX.",
+      "tech": [
+        "Unity",
+        "C#",
+        "ML Agents",
+        "GLSL"
+      ],
+      "thumbnail": "https://img.youtube.com/vi/HH5XTct8avo/hqdefault.jpg",
+      "links": {
+        "itch": "",
+        "github": "",
+        "youtube": "https://youtu.be/HH5XTct8avo"
+      }
+    },
+    {
+      "id": "backyard",
+      "title": "Back Yard",
+      "category": "gamejam",
+      "role": "Developer",
+      "description": "Built a 2D top-down shooter with tree-planting mechanics, enemy AI, and environmental challenges in 3 days for Zanga Game Jam.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzE1MjUzNTYzLnBuZw==/315x250%23c/M8EgJE.png",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/back-yard",
+        "github": "",
+        "youtube": "https://youtu.be/DOFLfcJMIe4"
+      }
+    },
+    {
+      "id": "kitchen",
+      "title": "Kitchen Chaos",
+      "category": "published",
+      "role": "Developer",
+      "description": "A cooking game built in Unity with fun kitchen mechanics and fast-paced gameplay.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzE2MTgzOTY5LmpwZw==/315x250%23c/XBGTBs.jpg",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/cooking-game",
+        "github": "",
+        "youtube": ""
+      }
+    },
+    {
+      "id": "infection",
+      "title": "Thought Infection (عدوى فكرية)",
+      "category": "gamejam",
+      "role": "Developer",
+      "description": "Concept-driven game.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzY1MzYwNTguanBn/original/0uOZrj.jpg",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/thought-infection",
+        "github": "",
+        "youtube": ""
+      }
+    },
+    {
+      "id": "spacemonkey",
+      "title": "Space Monkey (قرد الفضاء)",
+      "category": "gamejam",
+      "role": "Developer",
+      "description": "Action/Arcade game.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzU0ODA5NjcuanBn/original/UeiCBP.jpg",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/space-monkey",
+        "github": "",
+        "youtube": ""
+      }
+    },
+    {
+      "id": "stable",
+      "title": "STABLE BUILD 02",
+      "category": "gamejam",
+      "role": "Developer",
+      "description": "A polished jam entry — STABLE BUILD 02.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzI2NjY0OTM5LmpwZWc=/315x250%23c/pAolm1.jpeg",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/stable-build",
+        "github": "",
+        "youtube": "https://youtu.be/PLYO7QM8KUg"
+      }
+    },
+    {
+      "id": "potato",
+      "title": "Potato Legacy",
+      "category": "gamejam",
+      "role": "Developer",
+      "description": "A quirky jam game — Potato Legacy.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzExMjc4Nzg5LnBuZw==/315x250%23c/cg99XD.png",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/potato-legacy",
+        "github": "",
+        "youtube": "https://youtu.be/fSft6hQBKp8"
+      }
+    },
+    {
+      "id": "bolt",
+      "title": "2D Platformer Bolt",
+      "category": "published",
+      "role": "Developer",
+      "description": "A 2D platformer built for KM-Developer tutorials — fully published and playable on Itch.io.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzcxMzI5NzEucG5n/original/wDYA5Y.png",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/2d-platformer-bolt",
+        "github": "",
+        "youtube": ""
+      }
+    },
+    {
+      "id": "warzone",
+      "title": "War Zone",
+      "category": "gamejam",
+      "role": "Developer",
+      "description": "Action game.",
+      "tech": [
+        "Unity",
+        "C#"
+      ],
+      "thumbnail": "https://img.itch.zone/aW1nLzQ1MjY2NDEuanBn/original/YTTiNo.jpg",
+      "links": {
+        "itch": "https://mohamed20047.itch.io/ware-zone",
+        "github": "",
+        "youtube": ""
+      }
+    },
+    {
+      "id": "smartgallery",
+      "title": "SmartGallery (Graduation Project)",
+      "category": "software",
+      "role": "Developer",
+      "description": "A privacy-first, intelligent Android gallery application that performs complex AI image analysis entirely on-device.",
+      "tech": [
+        "Kotlin",
+        "SQLite",
+        "ONNX",
+        "MobileCLIP2",
+        "OCR"
+      ],
+      "thumbnail": "assets/images/projects/smartgallery.png",
+      "links": {
+        "itch": "",
+        "github": "https://github.com/y0riii/Smart-gallery",
+        "youtube": ""
+      }
+    },
+    {
+      "id": "library",
+      "title": "University Library Website",
+      "category": "software",
+      "role": "Developer",
+      "description": "Library management system built with HTML, CSS, JS, and Django.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Django"
+      ],
+      "thumbnail": "assets/images/projects/library.png",
+      "links": {
+        "itch": "",
+        "github": "https://github.com/mohamed20047",
+        "youtube": ""
+      }
+    }
+  ],
+  "community": {
+    "name": "FCAI-CU Game Development Club",
+    "role": "Founder & Community Manager",
+    "dates": "Sep 2023–Present",
+    "description": "Bridging university education and industry requirements through high-quality education, hands-on training, and creative events.",
+    "metrics": [
+      {
+        "value": "23+",
+        "label": "Team Members"
+      },
+      {
+        "value": "50+",
+        "label": "Students Trained"
+      },
+      {
+        "value": "30+",
+        "label": "Games Completed"
+      },
+      {
+        "value": "52",
+        "label": "Game Jam Participants"
+      },
+      {
+        "value": "19",
+        "label": "Games in 4 Days"
+      },
+      {
+        "value": "240+",
+        "label": "Event Tickets"
+      }
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/company/fcai-cu-game-development-club/",
+      "linktree": "https://linktr.ee/fcai_gd"
+    }
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/mohamed-game-dev/",
+    "github":   "https://github.com/mohamed20047",
+    "itchio":   "https://mohamed20047.itch.io/",
+    "youtube":  "https://www.youtube.com/@KMDeveloper",
+    "email":    "Mohamed.5.20047@gmail.com"
+  },
+
+  "linkedin_posts": [
+    {
+      "embedHtml": "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7429659548203847680?collapsed=1&theme=dark\" height=\"628\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
+    },
+    {
+      "embedHtml": "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:share:7423332309229035521?collapsed=1&theme=dark\" height=\"669\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
+    }
+  ]
+}
+

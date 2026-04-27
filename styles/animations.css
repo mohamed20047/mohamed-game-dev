@@ -1,0 +1,101 @@
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 5px rgba(0, 204, 255, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(0, 204, 255, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(0, 204, 255, 0.2); }
+}
+
+@keyframes tickerScrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes tickerScrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes typingBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: typingBlink 1s step-end infinite;
+  color: var(--clr-accent);
+}
+
+/* Hover Transitions */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-primary:hover {
+  background-color: #00b3e6;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 204, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 204, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .project-card .overlay {
+    opacity: 1;
+    transform: none;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 100%);
+  }
+}

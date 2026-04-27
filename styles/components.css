@@ -1,0 +1,457 @@
+/* ══════════════════════════════════════════════════════
+   COMPONENTS  —  Glassmorphism cards, buttons, nav, badges
+   ══════════════════════════════════════════════════════ */
+
+/* ── Glassmorphism Card ──────────────────────────────── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+button {
+  font-family: var(--font-display);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, var(--clr-accent), hsl(195, 90%, 45%));
+  color: hsl(220, 20%, 7%);
+  font-weight: 700;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  background: transparent;
+  color: var(--clr-text);
+  border: 2px solid var(--clr-accent);
+  font-weight: 600;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* ── Badges ──────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--clr-text);
+  white-space: nowrap;
+}
+
+/* To change category badge colors, edit these 3 blocks */
+.badge--game {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.badge--published {
+  background: rgba(0, 204, 255, 0.15);
+  color: var(--clr-accent);
+  border: 1px solid rgba(0, 204, 255, 0.3);
+}
+
+.badge--software {
+  background: rgba(155, 89, 182, 0.15);
+  color: var(--clr-accent-2);
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+/* ── Stat Cards ──────────────────────────────────────── */
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+/* renderer.js outputs <h3> for value and <p> for label inside .stat-card */
+.stat-card h3,
+.stat-card h4 {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--clr-accent);
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.stat-card p {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+/* ── Timeline ────────────────────────────────────────── */
+/* renderer.js outputs .timeline-item.glass-card inside #experience-timeline */
+.timeline-item {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 1.2rem;
+  top: 2.5rem;
+  bottom: -1.5rem;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: 0.7rem;
+  top: 1.8rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--clr-bg);
+  border: 2px solid var(--clr-accent);
+  box-shadow: 0 0 8px rgba(0, 204, 255, 0.4);
+}
+
+.timeline-item.active-role::after {
+  background: var(--clr-accent);
+  box-shadow: 0 0 14px rgba(0, 204, 255, 0.6);
+}
+
+.timeline-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-item .role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin-bottom: 0;
+}
+
+.timeline-item.active-role .role {
+  color: var(--clr-accent);
+}
+
+.timeline-item .company {
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+  font-style: italic;
+}
+
+.timeline-item .dates {
+  font-size: 0.8rem;
+  color: var(--clr-accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-left: auto;
+}
+
+.timeline-bullets {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: var(--clr-muted);
+  font-size: 0.9rem;
+}
+
+.timeline-bullets li {
+  margin-bottom: 0.4rem;
+}
+
+/* ── Project Card ────────────────────────────────────── */
+/* renderer.js structure:
+   .project-card.glass-card[data-category]
+     img.project-thumb
+     .project-content
+       .project-header
+         h3  +  .badge
+       .project-tech
+         span.tech-pill ×N
+       .project-hover-overlay  ← shown on hover
+         p (description)
+         .project-links
+           a.btn-primary / a.btn-outline
+*/
+.project-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--clr-surface);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-content {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.project-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-pill {
+  font-size: 0.72rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  color: var(--clr-muted);
+}
+
+/* Hover overlay — slides up over the card content */
+.project-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 13, 20, 0.97) 0%, rgba(10, 13, 20, 0.85) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  border-radius: 0;
+}
+
+.project-card:hover .project-hover-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover .project-thumb {
+  transform: scale(1.06);
+}
+
+.project-hover-overlay p {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links .btn-primary,
+.project-links .btn-outline {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+/* ── Skill Ticker Item ───────────────────────────────── */
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  margin-right: 0.75rem;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--clr-text);
+  flex-shrink: 0;
+  transition: border-color 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ── Navigation ──────────────────────────────────────── */
+#nav-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
+  background: rgba(10, 13, 20, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0;
+  /* Smooth hide/show on scroll — controlled by initNavScroll() in animations.js */
+  transition: transform 0.35s ease, background 0.3s ease;
+}
+
+/* Added by initNavScroll() when user scrolls down */
+#nav-menu.nav--hidden {
+  transform: translateY(-100%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--clr-text);
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(0, 204, 255, 0.35);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--clr-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--clr-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--clr-accent);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Hamburger — hidden on desktop */
+#nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 0.25rem;
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: var(--clr-text);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Section header shared style */
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-header.text-center {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}

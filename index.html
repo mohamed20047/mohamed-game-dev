@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Mostafa | Game Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mohamed Mostafa (KM-Developer) - Unity Game Developer, Graphics Programmer, and Community Founder based in Cairo, Egypt.">
+  <meta property="og:title" content="Mohamed Mostafa | Game Developer Portfolio">
+  <meta property="og:description" content="Unity Game Developer · Graphics Programmer · Community Founder. Building immersive experiences 1% better every day.">
+  <meta property="og:type" content="website">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+
+  <!-- Google Fonts: Outfit and Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+  <!-- Global Particle Background -->
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+
+  <noscript>
+    <div style="padding: 1rem; background: #222; color: #fff; text-align: center;">
+      Please enable JavaScript to view this site.
+    </div>
+  </noscript>
+
+  <header>
+    <nav id="nav-menu" class="glass-card" aria-label="Main Navigation">
+      <div class="nav-container container">
+        <a href="#hero" class="nav-logo" aria-label="Home">Mohamed Mostafa</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#community">Community</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="reveal">
+      <video id="hero-video" autoplay muted loop playsinline>
+        <source src="assets/videos/portfolio_background_v2.mp4" type="video/mp4">
+        <source src="assets/videos/portfolio_background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      
+      <div class="hero-content container">
+        <span id="hero-subtitle" class="section-label" data-fill="subtitle"></span>
+        <h1 id="hero-title"></h1>
+        <p class="hero-tagline"><span id="hero-typed"></span></p>
+        
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="chevron" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section id="about" class="container reveal">
+      <div class="section-header">
+        <span class="section-label">Discover</span>
+        <h2>About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <!-- Profile photo column -->
+        <aside class="about-photo">
+          <div class="profile-photo-wrap">
+            <img src="assets/images/profile-linkedin.jpg"
+                 alt="Mohamed Mostafa — profile photo"
+                 class="profile-photo"
+                 loading="eager">
+          </div>
+        </aside>
+
+        <article class="about-text">
+          <blockquote id="about-quote" class="glass-card">
+            <!-- Filled by JS -->
+          </blockquote>
+          <div id="about-bio">
+            <!-- Filled by JS -->
+          </div>
+          <div id="about-origin">
+            <!-- Filled by JS -->
+          </div>
+          <a id="resume-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">Download Resume</a>
+        </article>
+        
+        <aside id="about-stats" class="stats-grid" aria-label="Statistics">
+          <!-- .stat-card items filled by JS -->
+        </aside>
+      </div>
+    </section>
+
+    <section id="experience" class="container reveal">
+      <div class="section-header">
+        <span class="section-label">Journey</span>
+        <h2>Experience</h2>
+      </div>
+      
+      <div id="experience-timeline" class="timeline-container">
+        <!-- .timeline-item items filled by JS -->
+      </div>
+    </section>
+
+    <section id="community" class="reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label">Leadership</span>
+          <h2>Community</h2>
+        </div>
+        
+        <article class="community-content glass-card">
+          <div id="community-info">
+            <!-- Community details filled by JS -->
+          </div>
+          <div id="community-metrics" class="metrics-grid">
+            <!-- Metrics filled by JS -->
+          </div>
+          <div id="community-links" class="community-actions">
+            <!-- Links filled by JS -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="container reveal">
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2>Projects</h2>
+      </div>
+      
+      <div id="filter-buttons" aria-label="Filter Projects">
+        <button class="active" data-category="all">All</button>
+        <button data-category="gamejam">Game Jams</button>
+        <button data-category="published">Published Games</button>
+        <button data-category="software">Software Engineering</button>
+      </div>
+      
+      <div id="projects-grid">
+        <!-- .project-card items filled by JS -->
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label">Expertise</span>
+          <h2>Skills</h2>
+        </div>
+      </div>
+      
+      <div class="skills-tracks-container" aria-hidden="true">
+        <div class="skills-track-wrapper">
+          <div id="skills-track-1" class="skills-track">
+            <!-- .skill-item elements filled by JS -->
+          </div>
+        </div>
+        <div class="skills-track-wrapper">
+          <div id="skills-track-2" class="skills-track">
+            <!-- .skill-item elements filled by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LinkedIn Posts ─────────────────────────────────────────── -->
+    <section id="linkedin" class="container reveal">
+      <div class="section-header text-center">
+        <span class="section-label">Latest</span>
+        <h2>From LinkedIn</h2>
+      </div>
+      <div id="linkedin-posts" class="linkedin-grid">
+        <!-- Cards filled by renderLinkedIn() from portfolio_data.json -->
+      </div>
+      <div class="text-center" style="margin-top:2rem">
+        <a href="https://www.linkedin.com/in/mohamed-game-dev/" target="_blank" rel="noopener noreferrer" class="btn-outline">💼 View Full Profile</a>
+      </div>
+    </section>
+
+    <section id="contact" class="container reveal">
+      <div class="section-header text-center">
+        <span class="section-label">Get in Touch</span>
+        <h2>Initiate Comms</h2>
+      </div>
+      
+      <article class="contact-content glass-card">
+        <p id="contact-text" class="text-center">
+          <!-- Text filled by JS -->
+        </p>
+        
+        <div id="contact-links" class="contact-grid">
+          <!-- Contact link buttons filled by JS -->
+        </div>
+        
+        <div class="email-copy-wrapper text-center">
+          <button id="contact-email-btn" class="btn-primary" aria-label="Copy Email Address">
+            <span class="btn-text">Copy Email Address</span>
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; <time id="copyright-year"></time> <span id="footer-name"></span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/renderer.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
