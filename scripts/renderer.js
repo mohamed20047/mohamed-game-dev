@@ -20,6 +20,40 @@ function renderHero(identity) {
 }
 
 function renderAbout(identity, quotes, stats) {
+  if (!identity) return;
+
+  // Hello Badge
+  const helloContainer = document.querySelector('.hello-badge');
+  if (helloContainer && identity.hello_badge) {
+    helloContainer.innerHTML = `<span class="dot"></span> ${identity.hello_badge}`;
+  }
+
+  // Floating Cards
+  const photoWrap = document.querySelector('.profile-photo-wrap');
+  if (photoWrap && identity.floating_cards) {
+    // Remove existing floating cards before re-rendering
+    photoWrap.querySelectorAll('.floating-card').forEach(c => c.remove());
+    
+    identity.floating_cards.forEach(card => {
+      const cardEl = document.createElement('div');
+      cardEl.className = `floating-card ${card.position} glass-card`;
+      cardEl.innerHTML = `
+        <div class="card-icon">${card.icon}</div>
+        <div class="card-info">
+          <span class="card-label">${card.label}</span>
+          <span class="card-sub">${card.sub}</span>
+        </div>
+      `;
+      photoWrap.appendChild(cardEl);
+    });
+  }
+
+  // Bone Tooltip
+  const boneTooltip = document.querySelector('.bone-tooltip');
+  if (boneTooltip && identity.bone_tooltip) {
+    boneTooltip.textContent = identity.bone_tooltip;
+  }
+
   // Blockquote — first quote from JSON
   const quoteContainer = document.getElementById('about-quote');
   if (quoteContainer && quotes && quotes.length > 0) {
@@ -32,13 +66,13 @@ function renderAbout(identity, quotes, stats) {
 
   // Bio paragraph
   const bioContainer = document.getElementById('about-bio');
-  if (bioContainer && identity && identity.bio) {
+  if (bioContainer && identity.bio) {
     bioContainer.innerHTML = `<p>${identity.bio}</p>`;
   }
 
   // Origin story — only render if it's different from bio
   const originContainer = document.getElementById('about-origin');
-  if (originContainer && identity) {
+  if (originContainer) {
     const origin = identity.origin_story || '';
     const bio    = identity.bio || '';
     if (origin && origin.trim() !== bio.trim()) {
@@ -212,7 +246,8 @@ function renderContact(links) {
   // Also set email on copy button aria-label so screen readers know the address
   const emailBtn = document.getElementById('contact-email-btn');
   if (emailBtn && links.email) {
-    emailBtn.setAttribute('aria-label', `Copy email: ${links.email}`);
+    emailBtn.href = `mailto:${links.email}`;
+    emailBtn.setAttribute('aria-label', `Send email to ${links.email}`);
     const span = emailBtn.querySelector('.btn-text');
     if (span) span.textContent = `✉️  ${links.email}`;
   }

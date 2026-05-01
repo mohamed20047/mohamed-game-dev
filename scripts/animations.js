@@ -138,27 +138,6 @@ function initNavToggle() {
   }
 }
 
-function initEmailCopy(email) {
-  const btn = document.getElementById('contact-email-btn');
-  if (!btn) return;
-
-  btn.addEventListener('click', () => {
-    if (email) {
-      navigator.clipboard.writeText(email).then(() => {
-        const span = btn.querySelector('.btn-text');
-        if (span) {
-          const originalText = span.textContent;
-          span.textContent = 'Copied!';
-          setTimeout(() => {
-            span.textContent = originalText;
-          }, 2000);
-        }
-      }).catch(err => {
-        console.error('Failed to copy text: ', err);
-      });
-    }
-  });
-}
 
 function initVideoFallback() {
   const video = document.getElementById('hero-video');

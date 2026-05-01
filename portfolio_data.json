@@ -9,7 +9,23 @@
     "location": "Cairo, Egypt",
     "email": "Mohamed.5.20047@gmail.com",
     "phone": "+20 1157467984",
-    "resume_path": "assets/docs/Mohamed_Mostafa_Resume_2.pdf"
+    "resume_path": "assets/docs/Mohamed_Mostafa_Resume_2.pdf",
+    "hello_badge": "HELLO, I'M",
+    "bone_tooltip": "206 عضمة",
+    "floating_cards": [
+      {
+        "icon": "💼",
+        "label": "Open to Work",
+        "sub": "SWE · Game Dev",
+        "position": "top-right"
+      },
+      {
+        "icon": "🎓",
+        "label": "Cairo University",
+        "sub": "CS · Class of 2026",
+        "position": "bottom-left"
+      }
+    ]
   },
   "quotes": [
     {
@@ -108,18 +124,6 @@
   },
   "experience": [
     {
-      "role": "Game Developer (Part-Time)",
-      "company": "Al-Arcade Studio",
-      "type": "Part-Time",
-      "dates": "Apr 2026–Present",
-      "current": true,
-      "bullets": [
-        "Integrated Unity with Supabase for auth & data management",
-        "Enhanced game feel using DOTween for polished player feedback",
-        "Managed version control branches & resolved merge conflicts"
-      ]
-    },
-    {
       "role": "Founder & Community Manager",
       "company": "FCAI-CU Game Development Club",
       "type": "Community Leadership",
@@ -130,6 +134,18 @@
         "Scaled the organizing team from 2 to 23+ members across multiple departments",
         "Trained 50+ students, facilitated 30+ completed games, and ran a 52-person game jam (19 games in 4 days)",
         "Managed 240+ tickets for industry networking events featuring professional game developers"
+      ]
+    },
+    {
+      "role": "Game Developer (Part-Time)",
+      "company": "Al-Arcade Studio",
+      "type": "Part-Time",
+      "dates": "Apr 2026–Present",
+      "current": true,
+      "bullets": [
+        "Integrated Unity with Supabase for auth & data management",
+        "Enhanced game feel using DOTween for polished player feedback",
+        "Managed version control branches & resolved merge conflicts"
       ]
     },
     {
@@ -422,12 +438,11 @@
   },
   "links": {
     "linkedin": "https://www.linkedin.com/in/mohamed-game-dev/",
-    "github":   "https://github.com/mohamed20047",
-    "itchio":   "https://mohamed20047.itch.io/",
-    "youtube":  "https://www.youtube.com/@KMDeveloper",
-    "email":    "Mohamed.5.20047@gmail.com"
+    "github": "https://github.com/mohamed20047",
+    "itchio": "https://mohamed20047.itch.io/",
+    "youtube": "https://www.youtube.com/@KMDeveloper",
+    "email": "Mohamed.5.20047@gmail.com"
   },
-
   "linkedin_posts": [
     {
       "embedHtml": "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7429659548203847680?collapsed=1&theme=dark\" height=\"628\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
@@ -437,4 +452,3 @@
     }
   ]
 }
-

@@ -79,6 +79,7 @@
 
     <section id="about" class="container reveal">
       <div class="section-header">
+        <div class="hello-badge"></div>
         <span class="section-label">Discover</span>
         <h2>About Me</h2>
       </div>
@@ -91,6 +92,12 @@
                  alt="Mohamed Mostafa — profile photo"
                  class="profile-photo"
                  loading="eager">
+            
+            <!-- Floating Bone Emoji -->
+            <div class="floating-bone">
+              <span class="bone-icon">🦴</span>
+              <div class="bone-tooltip"></div>
+            </div>
           </div>
         </aside>
 
@@ -214,10 +221,10 @@
           <!-- Contact link buttons filled by JS -->
         </div>
         
-        <div class="email-copy-wrapper text-center">
-          <button id="contact-email-btn" class="btn-primary" aria-label="Copy Email Address">
-            <span class="btn-text">Copy Email Address</span>
-          </button>
+        <div class="email-link-wrapper text-center">
+          <a id="contact-email-btn" href="#" class="btn-primary" aria-label="Send Email">
+            <span class="btn-text">Send Email</span>
+          </a>
         </div>
       </article>
     </section>

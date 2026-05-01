@@ -36,8 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (typeof initScrollReveal === 'function') initScrollReveal();
 
       // Init remaining animations and interactions
-      const emailToCopy = (data.links && data.links.email) ? data.links.email : (data.identity ? data.identity.email : '');
-      if (typeof initEmailCopy === 'function') initEmailCopy(emailToCopy);
+
       if (typeof initVideoFallback === 'function') initVideoFallback();
       if (typeof initNavHighlight === 'function') initNavHighlight();
       if (typeof initNavScroll === 'function') initNavScroll();
